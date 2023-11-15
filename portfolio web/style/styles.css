@@ -1,0 +1,510 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  padding-inline: 3%;
+}
+
+/* navbar section */
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-block: 1rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  border-bottom: 2px solid black;
+  z-index: 999;
+}
+.navbar-container .logo a {
+  color: black;
+  font-size: 1.4rem;
+}
+.navbar-container .navbar-list ul {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 999px;
+  padding-block: 0.5rem;
+}
+
+.navbar-list ul li a {
+  color: black;
+  font-size: 0.9rem;
+  padding: 0.6rem 0.8rem;
+}
+.navbar-list ul li a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 999px;
+}
+.hamburger-menu {
+  display: none;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding-inline: 0;
+  background-color: aliceblue;
+  border-bottom: 2px solid black;
+  flex-wrap: wrap;
+}
+.hero .career {
+  flex: 1 1 42rem;
+}
+.hero .career .introduction,
+.hero .career .role,
+.hero .career .desc {
+  margin: 0 auto;
+  max-width: max-content;
+  background-color: #fff;
+  box-shadow: 9px 8px rgb(0, 0, 0);
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 1.2rem;
+}
+.hero .career .role,
+.hero .career .desc {
+  margin-top: 1.2rem;
+}
+.hero .career .introduction .information {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+.hero .introduction .information li {
+  border-left: 2px solid black;
+  padding-left: 8px;
+  font-size: 1rem;
+}
+.hero .career .role {
+  margin-block: 1.8rem;
+}
+.hero .career .role h1 {
+  font-size: 3rem;
+}
+
+.hero .career .desc p {
+  font-size: 13px;
+}
+.hero .profile {
+  padding-block: 6rem 3rem;
+  flex: 1 1 42rem;
+  background-color: rgb(255, 227, 255);
+  border-left: 3px solid black;
+  text-align: center;
+}
+.hero .profile img {
+  min-width: 250px;
+  width: 550px;
+}
+.project {
+  padding-block: 3rem;
+  background-color: rgb(233, 255, 233);
+  border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.project .desc {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.project .list-project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  flex-wrap: wrap;
+}
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+  background: rgb(7, 55, 103);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  background: #6881ff;
+  border-radius: 12px;
+}
+.project .list-project .item-project {
+  position: relative;
+  overflow: hidden;
+}
+
+.project .list-project .item-project .banner {
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  border: 2px solid black;
+}
+
+.project .list-project .item-project .content {
+  padding: 1rem;
+  background-color: #fff;
+  border: 2px solid black;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin-top: -10px;
+  overflow: hidden;
+}
+.project .list-project .item-project .content .content-title {
+  font-size: 1.5rem;
+}
+.project .list-project .item-project .content .content-desc {
+  margin-block: 10px 8px;
+  width: 300px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.project .list-project .item-project .content .tech-stack img {
+  width: 40px;
+}
+.project .list-project .item-project .content .view-site {
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  text-decoration: underline;
+}
+.project .list-project .item-project .category {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  border: 2px solid black;
+  padding: 10px;
+  font-weight: 500;
+  border-top-right-radius: 0.5rem;
+  border-bottom-left-radius: 1rem;
+}
+.sertification {
+  padding-block: 3rem;
+  background-color: aliceblue;
+  border-bottom: 2px solid black;
+}
+.sertification-list {
+  display: flex;
+  gap: 14px;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+}
+.about {
+  background-color: rgb(233, 255, 233);
+  border-bottom: 2px solid black;
+  padding-block: 3rem;
+}
+.about .content-img {
+  text-align: center;
+}
+.about .content-img img {
+  width: 900px;
+  height: 300px;
+  object-fit: cover;
+}
+.about p {
+  font-size: 1.1rem;
+}
+.about .career-journey .career-title {
+  display: flex;
+  align-items: center;
+  margin-block: 24px 10px;
+  gap: 12px;
+}
+.career-journey .career-list {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+.career-list .career {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem 1.4rem;
+  box-shadow: 9px 8px rgb(0, 0, 0);
+  border: 2px solid black;
+}
+.career .company {
+  padding-right: 2.4rem;
+}
+
+.company .info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  margin-block: 8px;
+  color: rgb(35, 31, 31);
+}
+.company .contract-time {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: rgb(82, 79, 79);
+}
+.company .contract {
+  font-size: 1rem;
+  color: rgb(136, 130, 130);
+}
+.info .name {
+  border-right: 1.5px solid black;
+  padding-right: 8px;
+}
+.skill {
+  padding-block: 2rem;
+}
+.skill .skill-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.skill .skill-title h2 {
+  font-size: 1.4rem;
+}
+.skill .skill-list {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+.skill-list .skill-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0.8rem;
+  box-shadow: 9px 8px rgb(0, 0, 0);
+  border: 2px solid black;
+}
+.skill-item p {
+  font-size: 1.2rem;
+}
+.blog {
+  background-color: #f0befc;
+  border-bottom: 2px solid black;
+  padding-block: 3rem;
+}
+.blog .lastest-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.blog .blog-list {
+  display: flex;
+  align-items: center;
+}
+.blog-list .blog-item {
+  background-color: #fff;
+  border: 2px solid black;
+  padding: 1rem;
+  width: 400px;
+}
+.blog-item .blog-img {
+  width: 360px;
+  object-fit: cover;
+  border: 2px solid black;
+}
+.blog-item .blog-content {
+  border-top: 2px solid black;
+  padding-top: 10px;
+}
+.blog-content .subtitle {
+  color: rgb(38, 38, 38);
+  font-size: 17px;
+}
+.blog-content .desc {
+  font-size: 15px;
+  color: gray;
+}
+.blog-content .date {
+  margin-top: 8px;
+  font-size: 14px;
+}
+.blog-content .view {
+  text-decoration: underline;
+  float: right;
+  color: blue;
+  padding-top: 1rem;
+}
+
+.contact {
+  padding-block: 3rem;
+  background-color: rgb(254, 255, 211);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact .medsos-list {
+  display: flex;
+  align-items: center;
+  margin-block: 12px;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+.contact .medsos-list .medsos {
+  border-radius: 0.6rem;
+  padding: 8px 1rem;
+  color: #fff;
+}
+.contact .medsos-list .medsos a {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: white;
+}
+.medsos.Github {
+  background-color: rgb(50, 63, 84);
+}
+.medsos.Instagram {
+  background-color: rgb(255, 77, 77);
+}
+.medsos.Tiktok {
+  background-color: rgb(13, 13, 13);
+}
+.medsos.Discord {
+  background-color: rgb(13, 73, 169);
+}
+.contact p {
+  font-size: 1.6rem;
+}
+.contact form p {
+  margin-bottom: 1rem;
+}
+.contact .input1 {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 1rem;
+}
+.contact .input1 input {
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  width: 100%;
+}
+.contact .textarea {
+  padding: 1rem;
+  font-size: 1.2rem;
+  resize: none;
+  border-radius: 8px;
+  border: 2px solid black;
+}
+.contact input[type="submit"] {
+  display: block;
+  margin-top: 14px;
+  padding: 0.7rem 1rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: rgb(5, 132, 81);
+  align-self: flex-end;
+}
+footer {
+  background-color: #f0befc;
+  color: white;
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.4rem;
+  border-top: 2px solid black;
+}
+
+/* media queries */
+
+/* laptop */
+
+@media screen and (max-width: 1200px) {
+  .hero .career {
+    padding-block: 7.5rem 1rem;
+  }
+  .hero .profile {
+    background-color: aliceblue;
+    border: none;
+    padding-top: 0;
+  }
+}
+
+/* tablet  */
+
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    justify-content: space-between;
+    padding-inline: 1rem;
+  }
+  .navbar-container .navbar-list {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    display: block;
+    height: 100vh;
+    width: 50%;
+    background-color: #fff;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    transition: 0.2s linear;
+  }
+  .navbar-container .navbar-list.active {
+    right: 0;
+  }
+  .navbar-container .navbar-list ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    gap: 2rem;
+    padding-top: 3rem;
+  }
+  .hamburger-menu {
+    display: inline;
+  }
+  .contact .input1 input {
+    width: 50%;
+  }
+  .contact .textarea {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero .career .role h1 {
+    font-size: 1.5rem;
+  }
+  .hero .introduction {
+    width: 80%;
+  }
+  .hero .introduction .information li {
+    font-size: 12px;
+  }
+  .hero .career .desc {
+    width: 78%;
+  }
+  .hero .profile img {
+    width: 400px;
+  }
+}
